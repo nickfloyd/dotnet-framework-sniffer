@@ -17,12 +17,12 @@ The reason I put this together was while converting (to .NET Core) a large .NET 
 
 `FrameworkSniffer.exe`
 
-**Pass in a path (use args[0] (string))**
+**Pass in a path (use `args[0]` (string))**
 This will search the path provided for any files with .dll suffix
 
 `FrameworkSniffer.exe c:\path-to-project`
 
-**Pass in a path and writeToFile (use args[0] (string) & args[1] (boolean) )**
+**Pass in a path and writeToFile (use `args[0]` (string) & `args[1]` (boolean) )**
 
 This will search the path provided for any files with .dll suffix and output the results to a file in the execution directory named `results.txt`
 
