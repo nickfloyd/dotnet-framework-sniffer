@@ -28,6 +28,17 @@ This will search the path provided for any files with .dll suffix and output the
 
 `FrameworkSniffer.exe c:\path-to-project true`
 
+### Sample Output
+```
+Name:Newtonsoft.Json.dll | CLR: v4.0.30319 | Framework: 4.0 Full
+Name:nunit.framework.dll | CLR: v2.0.50727 | Framework: 3.5
+Name:Telerik.JustMock.dll | CLR: v2.0.50727 | Framework: 3.5
+Name:Castle.Core.dll | CLR: v4.0.30319 | Framework: 4.0 Full
+Name:Castle.Windsor.dll | CLR: v4.0.30319 | Framework: 4.0 Full
+Name:log4net.dll | CLR: v2.0.50727 | Framework: 3.5
+Name:Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll | CLR: v2.0.50727 | Framework: 3.5
+```
+
 
 
 
