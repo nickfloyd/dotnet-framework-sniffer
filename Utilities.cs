@@ -25,7 +25,7 @@ namespace FrameworkSniffer
                     var a = Assembly.ReflectionOnlyLoadFrom(fileInfo.FullName);
                     var runtimeVersion = a.ImageRuntimeVersion;
                     var cleanRuntimeVersion = runtimeVersion.Replace('v', ' ').Trim();
-
+                    
                     Console.WriteLine(
                         $"Name:{fileInfo.Name} | CLR: {runtimeVersion} | Framework: {GetFrameworkVersionFromClrVersion(cleanRuntimeVersion)}");
                 }
@@ -59,6 +59,7 @@ namespace FrameworkSniffer
                     {x => x == 4, () => result = "4.0 Full"},
                     {x => x == 4016, () => result = "2.0 SP2"},
                     {x => x == 4037, () => result = "3.0 SP2"},
+                    {x => x == 50727, () => result = "3.5"},
                     {x => x == 378389, () => result = "4.5"},
                     {x => x <= 378675, () => result = "4.5.1"},
                     {x => x <= 378758, () => result = "4.5.1"},
@@ -93,7 +94,6 @@ namespace FrameworkSniffer
             switch (clrVersion)
             {
                 case "2.0":
-                case "2.0.50727":
                     releaseVersion = 0;
                     break;
                 case "3.0":
